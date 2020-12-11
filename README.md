@@ -4,6 +4,7 @@
 
 ## Materiale si metode
 
+### a) Materiale
 In realizarea proiectului au fost necesare componente hardware si software, detaliate in tabelele de mai jos.   
   
 Tabel 1. Componente hardware utilizate
@@ -25,10 +26,14 @@ Nr. | Software                  | Comentarii
 3   | Windows cmd               | conectare la Raspberry Pi prin protocol SSH
 4   | Visual Studio Code        | script Python, fisier documentatie Markdown
 
-Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 care este folosit cu rol triplu:      
+Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale carui specificatii complete sunt prezentate in *Figura 1*. Acesta este folosit cu rol triplu:      
 * server VPN  
 * server SSH  
-* citire informatie senzor DHT11  
+* citire informatie senzor DHT11    
+
+
+
+### b) Metode
 
 ## Rezultate
 

@@ -31,7 +31,7 @@ Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale ca
 * server SSH  
 * citire informatie senzor DHT11    
   
-<img src="imagini/raspberry_pi4_specifications.JPG" width=400>
+<img src="imagini/raspberry_pi4_specifications.JPG" width=500>
 Format: ![Alt Text](url)
 
 

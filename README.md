@@ -7,7 +7,7 @@
 ### a) Materiale
 In realizarea proiectului au fost necesare componente hardware si software, detaliate in tabelele de mai jos.   
   
-Tabel 1. Componente hardware utilizate
+*Tabel 1*. Componente hardware utilizate
 
 Nr. | Dispozitiv                                | Comentarii
 --  | --                                        | --
@@ -17,7 +17,7 @@ Nr. | Dispozitiv                                | Comentarii
 4   | Cabluri pentru conexiuni                  | microHDMI-HDMI, circuit electric
 5   | Dispozitiv cu rol de client VPN           | laptop / telefon mobil ...
 
-Tabel 2. Componente software utilizate
+*Tabel 2*. Componente software utilizate
 
 Nr. | Software                  | Comentarii
 --  | --                        | --
@@ -31,7 +31,7 @@ Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale ca
 * server SSH  
 * citire informatie senzor DHT11    
   
-![GitHub Logo](/images/logo.png)
+![Raspberry Pi 4 Model B specifications](/imagini/raspberry_pi4_specifications.jpg)
 Format: ![Alt Text](url)
 
 

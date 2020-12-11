@@ -30,6 +30,9 @@ Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale ca
 * server VPN  
 * server SSH  
 * citire informatie senzor DHT11    
+  
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
 
 
 

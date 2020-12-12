@@ -55,7 +55,7 @@ Partea cea mai dificila este configurarea serverului VPN si consta in mai multe 
     * setarea unei adrese IP statice pentru dispozitiv, pentru ca router-ul Wi-Fi al locuintei va fi configurat sa faca port forwarding catre Raspberry
     * setarea valorii portului OpenVPN (ex: 1194) prin care vor fi trimise pachetele de date de la router la Raspberry
     * configurarea criptarii ECDSA: 256 biti
-    * selectarea intre IP public sau DNS pentru conectare la serverul VPN; pentru simplitate am optat pentru varianta IP public, dar aceasta are dezavantajul ca in cazul schimbarii acestei adrese, proiectul nu va mai functiona si trebuie reconfigurat acest parametru
+    * selectarea intre IP public sau DNS pentru conectare la serverul VPN; pentru simplitate am optat pentru varianta IP public, dar aceasta are dezavantajul ca in cazul schimbarii adresei IP, proiectul nu va mai functiona si trebuie reconfigurat acest parametru
   
 
 

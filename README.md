@@ -73,9 +73,9 @@ In continuare am instalat softul OpenVPN (https://openvpn.net/download-open-vpn/
   
 Circuitul electric necesar pentru citirea temperaturii si umiditatii este unul simplu (a se vedea *Figura 3*) si este alcatuit din: senzor DHT11 varianta cu 3 pini si rezistenta inclusa, 3 cabluri pentru conexiunile dintre GPIO Raspberry Pi si senzor (VCC, ground si data). Mai dificil este setup-ul software, mai precis descarcarea librariilor / modulelor necesare din cauza unor probleme de suport din partea principalului furnizor de drivere pentru senzorul DHT11, compania Adafruit: pip, `pip3 install adafruit-circuitpython-dht`, `sudo apt-get install libgpiod2`.
   
-<img src="imagini/port_forwarding_upc.jpg" alt="Port forwarding pentru modem UPC" width=500>
+<img src="imagini/circuit_electric.jpg" alt="Circuit electric" width=500>
 
-*Figura 2*. Setarile port forwarding pentru modem UPC. Campul *Local IP* reprezinta adresa de IP statica a Raspberry Pi
+*Figura 3*. Schema circuitului electric din proiect (sursa https://www.hackster.io/akmaneesha/raspberry-pi-based-iot-project-connecting-dht11-sensor-b27f2a)
 
 ## Rezultate
 

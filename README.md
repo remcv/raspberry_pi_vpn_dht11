@@ -1,6 +1,13 @@
+--- 
+Disciplina: Arhitectura sistemelor de calcul
+Data predare: 12.12.2020
+---
+
 # Monitorizarea temperaturii si a umiditatii prin itermediul VPN si Raspberry Pi 4
 
 ## Introducere
+
+Proiectul isi propune citirea in timp real a informatiilor despre temperatura si umiditate furnizate de un senzor DHT11 conectat la Raspberry Pi 4. In plus informatiile vor fi transmise securizat catre un dispozitiv remote printr-o retea VPN in care rolul de server VPN este indeplinit de acelasi Raspberry Pi.   
 
 ## Materiale si metode
 
@@ -16,6 +23,7 @@ Nr. | Dispozitiv                                | Comentarii
 3   | Breadbord                                 | pentru realizarea circuitului electric
 4   | Cabluri pentru conexiuni                  | microHDMI-HDMI, circuit electric
 5   | Dispozitiv cu rol de client VPN           | laptop / telefon mobil ...
+6   | Card micro-SD                             | instalare sistem de operare, memorie non-volatila
 
 *Tabel 2*. Componente software utilizate
 
@@ -26,14 +34,20 @@ Nr. | Software                  | Comentarii
 3   | Windows cmd               | conectare la Raspberry Pi prin protocol SSH
 4   | Visual Studio Code        | script Python, fisier documentatie Markdown
 
-Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale carui specificatii complete sunt prezentate in *Figura 1*. Acesta este folosit cu rol triplu:      
+Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale carui specificatii complete sunt prezentate in *Figura 1*.
+
+<img src="imagini/raspberry_pi4_specifications.JPG" alt="Raspberry Pi 4 Model B specifications" width=500>
+
+*Figura 1*. Specificatii tehnice Raspberry Pi 4 Model B (sursa: [https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home))
+
+### b) Metode
+
+ Acesta este folosit cu rol triplu:      
 * server VPN  
 * server SSH  
 * citire informatie senzor DHT11    
   
-<img src="imagini/raspberry_pi4_specifications.JPG" alt="Raspberry Pi 4 Model B specifications" width=500>
 
-*Figura 1*. Specificatii tehnice Raspberry Pi 4 Model B (sursa: [https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home))
 
 
 

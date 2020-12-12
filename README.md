@@ -38,7 +38,7 @@ Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale ca
 
 <img src="imagini/raspberry_pi4_specifications.JPG" alt="Raspberry Pi 4 Model B specifications" width=500>
 
-*Figura 1*. Specificatii tehnice Raspberry Pi 4 Model B (sursa: [https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home))
+*Figura 1*. Specificatii tehnice Raspberry Pi 4 Model B (sursa: https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home)
 
 ### b) Metode
 
@@ -48,8 +48,10 @@ Principalii pasi urmati pentru realizarea proiectului au fost:
 * montarea circuitului electric pentru senzorul DHT11
 * conectarea remote prin VPN si SSH la Raspberry Pi si rularea scriptului Python
 
-Am optat pentru instalarea Raspian OS versiunea 32 biti cu GUI, urmand instructiunile de pe site-ul oficial al organizatiei Raspberry ([https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up)). Uramatorul pas consta in activarea SSH la nivelul Raspberry.
-Partea cea mai dificila este configurarea serverului VPN si consta in mai multe etape:  
+Am optat pentru instalarea Raspian OS versiunea 32 biti cu GUI, urmand instructiunile de pe site-ul oficial al organizatiei Raspberry (https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up). Urmatorul pas consta in activarea SSH la nivelul Raspberry.
+Partea cea mai dificila este configurarea serverului VPN si consta in mai multe etape: 
+* instalarea softului necesar pentru a transforma Raspberry Pi in server VPN: am utlizat PiVPN care poate fi rulat printr-o simpla comanda in terminal `curl -L https://install.pivpn.io | bash`
+* configurarea serverului cu urmatoarele setari: 
   
 
 
@@ -60,3 +62,5 @@ Partea cea mai dificila este configurarea serverului VPN si consta in mai multe 
 ## Concluzie
 
 ## Referinte
+1. Tutorial Lon Seidman https://www.youtube.com/watch?v=15VjDVCISj0
+2. PiVPN https://pivpn.io/

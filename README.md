@@ -49,7 +49,8 @@ Principalii pasi urmati pentru realizarea proiectului au fost:
 * montarea circuitului electric pentru senzorul DHT11
 * conectarea remote prin VPN si SSH la Raspberry Pi si rularea scriptului Python
 
-Am optat pentru instalarea Raspian OS versiunea 32 biti cu GUI, urmand instructiunile de pe site-ul oficial al organizatiei Raspberry (https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up). Urmatorul pas consta in activarea SSH la nivelul Raspberry.
+Am optat pentru instalarea Raspian OS versiunea 32 biti cu GUI, urmand instructiunile de pe site-ul oficial al organizatiei Raspberry (https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up). Urmatorul pas consta in activarea SSH la nivelul Raspberry.  
+  
 Partea cea mai dificila este configurarea serverului VPN si consta in mai multe etape: 
 * instalarea softului necesar pentru a transforma Raspberry Pi in server VPN: am utlizat PiVPN care poate fi rulat printr-o simpla comanda in terminal `curl -L https://install.pivpn.io | bash`
 * configurarea serverului VPN cu urmatoarele setari:

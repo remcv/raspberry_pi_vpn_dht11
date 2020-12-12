@@ -85,9 +85,13 @@ Ultima etapa a constat in conectarea remote prin VPN si SSH la Raspberry Pi si r
 In ciuda intampinarii unor probleme legate de aplicatia OpenVPN (cateva crash-uri) si de situatia neclara a librariilor / modulelor Python care ofera suport pentru senzorul DHT11 si Raspberry Pi, am reusit sa obtin rezultatul dorit: citirea remote securizata a informatiilor despre temperatura si umiditate. Mentionez ca in cele din urma am optat pentru o conexiune ethernet intre modemul UPC si Raspberry Pi.  
 In urmatoarele figuri sunt prezentate rezultatele proiectului.  
 
-<img src="imagini/circuit_electric.jpg" alt="Circuit electric" width=500>
+<img src="imagini/rezultat_circuit_hardware.jpeg" alt="Componentele hardware" width=700>
 
-*Figura 4*. Schema circuitului electric din proiect (sursa https://www.hackster.io/akmaneesha/raspberry-pi-based-iot-project-connecting-dht11-sensor-b27f2a)
+*Figura 4*. Componentele hardware ale proiectului, asamblate pentru citirea temperaturii si a umiditatii
+
+<img src="imagini/screenshot-terminal-date-vpn.JPG" alt="Screenshot rezultate" width=700>
+
+*Figura 5*. Screenshot facut pe laptopul personal (aici cu rol de client VPN, deoarece este conectat la internet prin hotspot de pe telefonul mobil). In stanga este prezentat terminalul Windows cmd, conectat prin VPN, apoi SSH la Raspberry Pi si ruland script-ul Python (atasat) care contine instructiuni pentru citirea informatiilor furnizate de senzorul DHT11. In dreapta se observa fereastra OpenVPN care arata ca laptop-ul este conectat prin VPN la internet. 
 
 ### Ce am invatat
 

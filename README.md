@@ -46,6 +46,7 @@ Principalii pasi urmati pentru realizarea proiectului au fost:
 * instalarea Raspian OS pe Raspberry Pi
 * configurarea Raspberry Pi pentru a juca rolul de server VPN
 * configurarea router-ului Wi-Fi al locuintei pentru a efectua port forwarding
+* instalarea softului OpenVPN pe dispozitivul remote
 * montarea circuitului electric pentru senzorul DHT11
 * conectarea remote prin VPN si SSH la Raspberry Pi si rularea scriptului Python
 
@@ -58,6 +59,15 @@ Partea cea mai dificila este configurarea serverului VPN si consta in mai multe 
     * setarea valorii portului OpenVPN (ex: 1194) prin care vor fi trimise pachetele de date de la router la Raspberry
     * configurarea criptarii ECDSA: 256 biti
     * selectarea intre IP public sau DNS pentru conectare la serverul VPN; pentru simplitate am optat pentru varianta IP public, dar aceasta are dezavantajul ca in cazul schimbarii adresei IP, proiectul nu va mai functiona si trebuie reconfigurat acest parametru
+    * selectarea provider-ului DNS pentru clientii VPN: Google
+    * restartare Raspberry Pi
+    * crearea in terminal a unui profil de client ovpn `$ pivpn -a`, apoi adaugarea unui nume si a unei parole. Astfel se genereaza un fisier <nume_utilizator>.ovpn cu rol de certificat care trebuie transferat pe dispozitivele remote ce se vor conecta la serverul VPN si utilizat la realizarea conexiunii prin OpenVPN  
+
+Pentru a redirectiona traficul de internet de la clientii VPN catre Raspberry Pi (serverul VPN), router-ul Wi-Fi al locuintei trebuie configurat in asa fel incat cererile primite prin protocolul HTTP la un anumit port (in cazul de fata, portul 1194) sa fie automat transmise catre IP-ul static al Raspberry Pi. In cazul meu router-ul Wi-Fi este un modem UPC. Pagina de port forwarding si setarile facute sunt prezentate in *Figura 2*.  
+
+<img src="imagini/port_forwarding_upc.jpg" alt="Port forwarding pentru modem UPC" width=500>
+
+*Figura 2*. Setarile port forwarding pentru modem UPC. Campul local IP reprezinta adresa de IP statica a Raspberry Pi
   
 
 

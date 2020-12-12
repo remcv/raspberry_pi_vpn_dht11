@@ -3,7 +3,7 @@ Disciplina: Arhitectura sistemelor de calcul
 Data predare: 12.12.2020
 ---
 
-# Monitorizarea temperaturii si a umiditatii prin itermediul VPN si Raspberry Pi 4
+# Monitorizarea remote a temperaturii si a umiditatii prin intermediul Raspberry Pi 4 si VPN
 
 ## Introducere
 

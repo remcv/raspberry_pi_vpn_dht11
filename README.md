@@ -33,6 +33,7 @@ Nr.   | Software                  | Comentarii
 2     | OpenVPN                   | instalat pe dispozitivul cu rol de client VPN
 3     | Windows cmd               | conectare la Raspberry Pi prin protocol SSH
 4     | Visual Studio Code        | script Python, fisier documentatie Markdown
+5     | Librarii / module Python  | detalii in text
 
 Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale carui specificatii complete sunt prezentate in *Figura 1*.
 

@@ -51,7 +51,11 @@ Principalii pasi urmati pentru realizarea proiectului au fost:
 Am optat pentru instalarea Raspian OS versiunea 32 biti cu GUI, urmand instructiunile de pe site-ul oficial al organizatiei Raspberry (https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up). Urmatorul pas consta in activarea SSH la nivelul Raspberry.
 Partea cea mai dificila este configurarea serverului VPN si consta in mai multe etape: 
 * instalarea softului necesar pentru a transforma Raspberry Pi in server VPN: am utlizat PiVPN care poate fi rulat printr-o simpla comanda in terminal `curl -L https://install.pivpn.io | bash`
-* configurarea serverului cu urmatoarele setari: 
+* configurarea serverului VPN cu urmatoarele setari:
+    * setarea unei adrese IP statice pentru dispozitiv, pentru ca router-ul Wi-Fi al locuintei va fi configurat sa faca port forwarding catre Raspberry
+    * setarea valorii portului OpenVPN (ex: 1194) prin care vor fi trimise pachetele de date de la router la Raspberry
+    * configurarea criptarii ECDSA: 256 biti
+    * selectarea intre IP public sau DNS pentru conectare la serverul VPN; pentru simplitate am optat pentru varianta IP public, dar aceasta are dezavantajul ca in cazul schimbarii acestei adrese, proiectul nu va mai functiona si trebuie reconfigurat acest parametru
   
 
 
@@ -64,3 +68,4 @@ Partea cea mai dificila este configurarea serverului VPN si consta in mai multe 
 ## Referinte
 1. Tutorial Lon Seidman https://www.youtube.com/watch?v=15VjDVCISj0
 2. PiVPN https://pivpn.io/
+3. Site oficial Raspberry https://projects.raspberrypi.org/en

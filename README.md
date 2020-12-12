@@ -10,7 +10,7 @@ In realizarea proiectului au fost necesare componente hardware si software, deta
 *Tabel 1*. Componente hardware utilizate
 
 Nr. | Dispozitiv                                | Comentarii
---  | --                                        | --
+--  | ----------------------------------------- | -------------------------------------
 1   | Raspberry Pi 4 Model B                    | varianta 8GB LPDDR4-3200 SDRAM
 2   | Senzor de temperatura si umiditate DHT11  | varianta cu 3 pini si rezistenta inclusa
 3   | Breadbord                                 | pentru realizarea circuitului electric
@@ -20,7 +20,7 @@ Nr. | Dispozitiv                                | Comentarii
 *Tabel 2*. Componente software utilizate
 
 Nr. | Software                  | Comentarii
---  | --                        | --
+--  | ------------------------- | ------------------------------------------
 1   | PiVPN                     | pentru a face Raspberry Pi server VPN
 2   | OpenVPN                   | instalat pe dispozitivul cu rol de client VPN
 3   | Windows cmd               | conectare la Raspberry Pi prin protocol SSH
@@ -31,8 +31,9 @@ Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale ca
 * server SSH  
 * citire informatie senzor DHT11    
   
-<img src="imagini/raspberry_pi4_specifications.JPG" width=500>
-Format: ![Alt Text](url)
+<img src="imagini/raspberry_pi4_specifications.JPG" alt="Raspberry Pi 4 Model B specifications" width=500>
+
+*Figura 1*. Specificatii tehnice Raspberry Pi 4 Model B (sursa: [https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/?resellerType=home))
 
 
 

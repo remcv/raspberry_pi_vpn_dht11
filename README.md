@@ -67,7 +67,9 @@ Pentru a redirectiona traficul de internet de la clientii VPN catre Raspberry Pi
 
 <img src="imagini/port_forwarding_upc.jpg" alt="Port forwarding pentru modem UPC" width=500>
 
-*Figura 2*. Setarile port forwarding pentru modem UPC. Campul *Local IP* reprezinta adresa de IP statica a Raspberry Pi
+*Figura 2*. Setarile port forwarding pentru modem UPC. Campul *Local IP* reprezinta adresa de IP statica a Raspberry Pi  
+  
+In continuare am instalat softul OpenVPN (https://openvpn.net/download-open-vpn/) pe laptop-ul personal si am folosit fisierul de configurare <nume_utilizator>.ovpn mentionat mai sus pentru a certifica utilizatorul remote la serverul VPN. Acesta este un produs care poate fi utilizat gratuit. 
   
 
 
@@ -81,3 +83,4 @@ Pentru a redirectiona traficul de internet de la clientii VPN catre Raspberry Pi
 1. Tutorial Lon Seidman https://www.youtube.com/watch?v=15VjDVCISj0
 2. PiVPN https://pivpn.io/
 3. Site oficial Raspberry https://projects.raspberrypi.org/en
+4. OpenVPN https://openvpn.net/

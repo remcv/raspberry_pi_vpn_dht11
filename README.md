@@ -72,33 +72,48 @@ Pentru a redirectiona traficul de internet de la clientii VPN catre Raspberry Pi
   
 In continuare am instalat softul OpenVPN (https://openvpn.net/download-open-vpn/) pe laptop-ul personal si am folosit fisierul de configurare <nume_utilizator>.ovpn mentionat mai sus pentru a certifica utilizatorul remote la serverul VPN. Acesta este un produs care poate fi utilizat gratuit.  
   
-Circuitul electric necesar pentru citirea temperaturii si umiditatii este unul simplu (a se vedea *Figura 3*) si este alcatuit din: senzor DHT11 varianta cu 3 pini si rezistenta inclusa, 3 cabluri pentru conexiunile dintre GPIO Raspberry Pi si senzor (VCC, ground si data). Mai dificil este setup-ul software, mai precis descarcarea librariilor / modulelor necesare din cauza unor probleme de suport din partea principalului furnizor de drivere pentru senzorul DHT11, compania Adafruit: pip, `pip3 install adafruit-circuitpython-dht`, `sudo apt-get install libgpiod2`.
+Circuitul electric necesar pentru citirea temperaturii si umiditatii este unul simplu (a se vedea *Figura 3*) si este alcatuit din: senzor DHT11 varianta cu 3 pini si rezistenta inclusa, 3 cabluri pentru conexiunile dintre GPIO Raspberry Pi si senzor (VCC, ground si data).   
+Mai dificil este setup-ul software, mai precis descarcarea librariilor / modulelor necesare din cauza unor probleme de suport din partea principalului furnizor de drivere pentru senzorul DHT11, compania Adafruit: pip, `pip3 install adafruit-circuitpython-dht`, `sudo apt-get install libgpiod2`. Script-ul Python a fost compus si testat de mine dupa consultarea a multiple surse online, fiind dificil de compus o varianta corecta din cauzele mentionate mai sus.
   
 <img src="imagini/circuit_electric.jpg" alt="Circuit electric" width=500>
 
 *Figura 3*. Schema circuitului electric din proiect (sursa https://www.hackster.io/akmaneesha/raspberry-pi-based-iot-project-connecting-dht11-sensor-b27f2a)
   
-Ultima etapa a constat in conectarea remote prin VPN si SSH la Raspberry Pi si rularea scriptului Python (care este inclus in folderului proiectului, la adresa "raspberrydht11.py").
+Ultima etapa a constat in conectarea remote prin VPN si SSH la Raspberry Pi si rularea scriptului Python (care este inclus in folderul proiectului, la adresa "raspberrydht11.py").
 
 ## Rezultate
 
 In ciuda intampinarii unor probleme legate de aplicatia OpenVPN (cateva crash-uri) si de situatia neclara a librariilor / modulelor Python care ofera suport pentru senzorul DHT11 si Raspberry Pi, am reusit sa obtin rezultatul dorit: citirea remote securizata a informatiilor despre temperatura si umiditate. Mentionez ca in cele din urma am optat pentru o conexiune ethernet intre modemul UPC si Raspberry Pi.  
 In urmatoarele figuri sunt prezentate rezultatele proiectului.  
 
-<img src="imagini/rezultat_circuit_hardware.jpeg" alt="Componentele hardware" width=700>
+<img src="imagini/rezultat_circuit_hardware.jpeg" alt="Componentele hardware" width=800>
 
 *Figura 4*. Componentele hardware ale proiectului, asamblate pentru citirea temperaturii si a umiditatii
 
-<img src="imagini/screenshot-terminal-date-vpn.JPG" alt="Screenshot rezultate" width=700>
+<img src="imagini/screenshot-terminal-date-vpn.JPG" alt="Screenshot rezultate" width=800>
 
 *Figura 5*. Screenshot facut pe laptopul personal (aici cu rol de client VPN, deoarece este conectat la internet prin hotspot de pe telefonul mobil). In stanga este prezentat terminalul Windows cmd, conectat prin VPN, apoi SSH la Raspberry Pi si ruland script-ul Python (atasat) care contine instructiuni pentru citirea informatiilor furnizate de senzorul DHT11. In dreapta se observa fereastra OpenVPN care arata ca laptop-ul este conectat prin VPN la internet. 
 
-### Ce am invatat
+### Ce am invatat?
+Mentionez ca acest proiect mi-a oferit posibilitatea sa invat / aprofundez multiple notiuni despre:
+* principiile generale de functionare ale internetului
+* functionarea generala a retelei de internet locala
+* configurarea router-ului UPC
+* principiile de functionare ale VPN
+* protocolul SSH, pe care nu il cunosteam anterior
+* configurarea de baza a Raspberry Pi
+* obiectiv secundar: am aprofundat cunostiintele pe care le aveam despre Markdown
 
 ## Concluzie
+
+In ciuda faptului ca proiectul ales poate parea relativ simplu, acesta implica imbinarea a multiple notiuni de retelistica, electronica si programare care stau la baza unor constructii mult mai complexe. Proiectul a demonstrat citirea remote si securizata a unor senzori aflati in locuita, sau altfel spus, unul dintre principalele intrebuintari ale tehnologiilor IoT. Schema proiectului poate fi extinsa pentru multiple aplicatii, eventual care sa implice si efectuarea unor actiuni in functie de datele furnizate de senzori.
 
 ## Referinte
 1. Tutorial Lon Seidman https://www.youtube.com/watch?v=15VjDVCISj0
 2. PiVPN https://pivpn.io/
 3. Site oficial Raspberry https://projects.raspberrypi.org/en
 4. OpenVPN https://openvpn.net/
+5. Librarii Python https://github.com/adafruit/Adafruit_CircuitPython_IRRemote
+6. Instalare si utilizare librarii Python https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/python-setup
+7. Playlist tutoriale video Raspberry Pi https://www.youtube.com/playlist?list=PLYl5sY0sL98hJRpne6ShX1I9JJ6MVIH4q
+8. Ghid Markdown GitHub https://guides.github.com/features/mastering-markdown/

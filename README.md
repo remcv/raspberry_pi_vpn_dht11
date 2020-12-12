@@ -45,6 +45,7 @@ Dispozitivul cu rol central in acest proiect este Raspberry Pi 4 Model B, ale ca
 Principalii pasi urmati pentru realizarea proiectului au fost:
 * instalarea Raspian OS pe Raspberry Pi
 * configurarea Raspberry Pi pentru a juca rolul de server VPN
+* configurarea router-ului Wi-Fi al locuintei pentru a efectua port forwarding
 * montarea circuitului electric pentru senzorul DHT11
 * conectarea remote prin VPN si SSH la Raspberry Pi si rularea scriptului Python
 

@@ -67,7 +67,7 @@ Pentru a redirectiona traficul de internet de la clientii VPN catre Raspberry Pi
 
 <img src="imagini/port_forwarding_upc.jpg" alt="Port forwarding pentru modem UPC" width=500>
 
-*Figura 2*. Setarile port forwarding pentru modem UPC. Campul local IP reprezinta adresa de IP statica a Raspberry Pi
+*Figura 2*. Setarile port forwarding pentru modem UPC. Campul *Local IP* reprezinta adresa de IP statica a Raspberry Pi
   
 
 

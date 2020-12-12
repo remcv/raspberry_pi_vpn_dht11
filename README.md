@@ -77,8 +77,17 @@ Circuitul electric necesar pentru citirea temperaturii si umiditatii este unul s
 <img src="imagini/circuit_electric.jpg" alt="Circuit electric" width=500>
 
 *Figura 3*. Schema circuitului electric din proiect (sursa https://www.hackster.io/akmaneesha/raspberry-pi-based-iot-project-connecting-dht11-sensor-b27f2a)
+  
+Ultima etapa a constat in conectarea remote prin VPN si SSH la Raspberry Pi si rularea scriptului Python (care este inclus in folderului proiectului, la adresa "raspberrydht11.py").
 
 ## Rezultate
+
+In ciuda intampinarii unor probleme legate de aplicatia OpenVPN (cateva crash-uri) si de situatia neclara a librariilor / modulelor Python care ofera suport pentru senzorul DHT11 si Raspberry Pi, am reusit sa obtin rezultatul dorit: citirea remote securizata a informatiilor despre temperatura si umiditate. Mentionez ca in cele din urma am optat pentru o conexiune ethernet intre modemul UPC si Raspberry Pi.  
+In urmatoarele figuri sunt prezentate rezultatele proiectului.  
+
+<img src="imagini/circuit_electric.jpg" alt="Circuit electric" width=500>
+
+*Figura 4*. Schema circuitului electric din proiect (sursa https://www.hackster.io/akmaneesha/raspberry-pi-based-iot-project-connecting-dht11-sensor-b27f2a)
 
 ### Ce am invatat
 
